@@ -1,0 +1,250 @@
+<app-header></app-header>
+<section class="mobile-p-15 dashboard-pad">
+  <div class="container">    
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="text-center page-title">You have 1 document</h4>
+      </div> 
+    </div>
+    <!-- // Filter // -->
+    <div class="row search-height">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="login-register-cart-button d-flex align-items-center">
+        <!-- Login/Register -->
+        <form onsubmit="submitFn(this, event);">
+          <div class="search-wrapper active">
+              <div class="input-holder card_repo_list">
+                  <ul>
+                    <li class="search-list">
+                      <input type="search" name="">
+                      <span class="search_icon"></span>
+                    </li>
+                    <li class="search-list">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle select-all" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Status <span class="dropdown_ico"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Active</a>
+                          <a class="dropdown-item" href="#">Deactive</a>
+                          <a class="dropdown-item" href="#">Panding</a>
+                        </div>
+                      </div>  
+                    </li>
+                    <li class="search-list">
+                      <button type="button" class="btn btn-default select-all">Select all</button>
+                    </li>
+                    <li class="search-list">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle select-all" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action <span class="dropdown_ico"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Delete</a>
+                          <a class="dropdown-item" href="#">Edit</a>
+                        </div>
+                      </div>  
+                    </li>
+                    <li class="">
+                      Display: <span class="view-changer box_view active" data-attr="gallery"></span>
+                    </li>
+                  </ul>
+                  <a class="view-changer list_icon" data-attr="list-view"></a>
+              </div>
+              
+              <div class="result-container">
+
+              </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+    <!-- // Filter End // -->
+    <div class="row grid_view content_card_repo">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+        <div class="my-kiip-box row">
+          <div class="checkbox checkbox-info">
+            <input type="checkbox" id="checkbox-1-1" class="regular-checkbox">
+            <label for="checkbox-1-1"></label>
+            <label for="checkbox-1-1"><span>This is content card title</span></label>
+          </div>
+          <img src="../../assets/img/kiip-box.png" class="img-fluid img-kiip">
+          <div class="kiip_content">
+            <p>Code:  <span class="font-normal">#1234</span></p>
+            <p>Status: <span class="font-normal">active</span></p>
+            <p>Downloads: <span class="font-normal">200</span></p>
+            <p>Documents: <span class="font-normal">5</span></p>
+          </div>
+          <div class="kiip_img hidden-xs">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 text-center d-flex align-items-center justify-content-center">
+        <a routerLink="../cardscreen" class="btn btn-default add_btn">+</a>
+      </div>
+    </div>
+    <!-- List View -->
+    <div class="row list_view_box my-kiip-box div_none">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 no-pad">
+        <table class="table audience_table">
+          <thead>
+            <tr>
+              <th colspan="1">Card Title</th>
+              <th>Card Image</th>
+              <th>Code</th>
+              <th>Status</th>
+              <th>Downloads</th>
+              <th>Documents</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-01" class="regular-checkbox">
+                  <label for="checkbox-1-01"></label>
+                  <label for="checkbox-1-01"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-08" class="regular-checkbox">
+                  <label for="checkbox-1-08"></label>
+                  <label for="checkbox-1-08"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-06" class="regular-checkbox">
+                  <label for="checkbox-1-06"></label>
+                  <label for="checkbox-1-06"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-02" class="regular-checkbox">
+                  <label for="checkbox-1-02"></label>
+                  <label for="checkbox-1-02"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-03" class="regular-checkbox">
+                  <label for="checkbox-1-03"></label>
+                  <label for="checkbox-1-03"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <div class="checkbox checkbox-info">
+                  <input type="checkbox" id="checkbox-1-04" class="regular-checkbox">
+                  <label for="checkbox-1-04"></label>
+                  <label for="checkbox-1-04"><span>This is content card title</span></label>
+                </div>
+              </td>
+              <td><img src="../../assets/img/kiip-box.png" class="img-fluid" width="150"></td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">#1234</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">Active</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p> <span class="font-normal">200</span></p>
+              </td>
+              <td class="kiip_content">
+                  <p><span class="font-normal">5</span></p>
+              </td>
+            </tr>
+             <tr>
+               <td colspan="6">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <a routerLink="../cardscreen" class="btn btn-default add_btn list_add">+</a>
+                  </div>
+               </td>
+             </tr>
+             
+             
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

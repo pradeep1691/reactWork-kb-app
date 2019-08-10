@@ -1,0 +1,229 @@
+<app-header></app-header>
+<section class="mobile-p-15 dashboard-pad">
+  <div class="container">  
+    <div class="row card_name">
+      <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+        <h4 class="text-center create_box_title">Create a content card</h4>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-12 col-md-12">
+        <a routerLink="../cardrepository" class="back_link">Return</a>
+      </div>
+    </div>
+    <div class="row detail_box paid_customer content_kiipbox">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h4 class="text-center content_title_card">Manage information<span class="pull-right" style="display: none;"><button type="button" class="btn btn-default">Discard changes</button><button class="btn btn-default" type="button">Save changes</button></span></h4>
+      </div>
+      <div class="col-12 col-sm-2 col-lg-2 col-md-12"></div>
+      <div class="col-12 col-sm-10 col-md-12 col-lg-10">
+        <div class="kiip_content card_section" style="padding-top: 0">
+          <p class="audience_target height_input_box">
+            <span class="fns_normal">Card code: </span> 
+            <input type="text" name="" placeholder=" #1265" class="custom_input_small">
+            <small class="small_code_text">This code allows your audience to receive this content card when subscribing</small>
+          </p>
+          <p class="audience_target height_input_box">
+            <span>Card status: </span> 
+            <label class="active_label">Unactive</label>
+            <label class="switch">
+              <input type="checkbox" checked="">
+              <span class="slider round"></span>
+            </label>
+            <label class="active_label">Active</label>
+          </p>
+          
+          <div class="audience_target card_title_height">
+            <span class="bold_text_500">Card title:</span> 
+            <div class="col-12 col-lg-8 no-pad">
+              <input type="text" name="" placeholder="" class="form-control">
+              <small class="max_char"><i>50 characters max</i></small>
+            </div>
+          </div>
+          <div class="audience_target card_desc_height">
+            <label for="sender-name" class="bold_text_500">Card description:</label>
+            <div class="col-12 col-lg-8 no-pad">
+              <textarea class="form-control email_body" placeholder="" rows="12">              
+              </textarea>
+              <small class="max_char"><i>1500 characters max</i></small>
+            </div>
+          </div>
+          <div class="audience_target card_desc_height">
+            <label for="sender-name" class="bold_text_500">Message if card unactive:</label>
+            <div class="col-12 col-lg-8 no-pad">
+              <textarea class="form-control email_body" placeholder="" rows="5">              
+              </textarea>
+              <small class="max_char"><i>300 characters max</i></small>
+            </div>
+          </div>
+          
+        </div>
+      </div> 
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 no-pad">
+        <hr class="">  
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <h4 class="document_title text-center">3 documents
+            <span>
+              <span class="add_side_upload">
+                <label>
+                  <input type="file" name="">
+                  <span>Add new documents</span>
+                </label>      
+              </span>
+            </span>
+          </h4>
+          <div class="input-holder sorting_document col-12">
+            <ul>
+              <li class="">
+                Display: <span class="view-changer box_view active" data-attr="gallery"></span>
+              </li>
+              <li><a class="view-changer list_icon" data-attr="list-view"></a></li>
+            </ul>
+          </div>
+          <div class="upload_img_slide upload_grid">
+            <div class="row">
+              <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="slide_img">
+                  <img src="../../assets/img/document-img.jpg">
+                  <span><i class="fa fa-trash"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="slide_img">
+                  <img src="../../assets/img/document-img.jpg">
+                  <span><i class="fa fa-trash"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="slide_img">
+                  <img src="../../assets/img/document-img.jpg">
+                  <span><i class="fa fa-trash"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="slide_img audience_target">
+                  <span class="add_side_upload">
+                    <label>
+                      <input type="file" name="">
+                      <span><img src="../../assets/img/upload_pdf.png"></span>
+                    </label>      
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+
+          <div class="upload_img_slide upload_list div_none">
+            <div class="row">
+              <table class="table audience_table">
+                <thead>
+                  <tr>
+                    <th colspan="1">Documents</th>
+                    <th>Documents Name</th>
+                    <th>Documents Type</th>
+                    <th>Documents Size</th>
+                    <th>Added Date</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="slide_img">
+                        <img src="../../assets/img/document-img.jpg">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="document_name">Id Proof</p>
+                    </td>
+                    <td>
+                      <p class="document_type">Image</p>
+                    </td>
+                    <td>
+                      <p class="document_size">17kb</p>
+                    </td>
+                    <td>
+                      <p class="added_date">19/07/2019</p>
+                    </td>
+                    <td>
+                      <span class="green_color"><i class="fa fa-trash"></i></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="slide_img">
+                        <img src="../../assets/img/document-pdf.png">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="document_name">Id Proof</p>
+                    </td>
+                    <td>
+                      <p class="document_type">PDF</p>
+                    </td>
+                    <td>
+                      <p class="document_size">20kb</p>
+                    </td>
+                    <td>
+                      <p class="added_date">19/07/2019</p>
+                    </td>
+                    <td>
+                      <span class="green_color"><i class="fa fa-trash"></i></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="slide_img">
+                        <img src="../../assets/img/document-xls.png">
+                      </div>
+                    </td>
+                    <td>
+                      <p class="document_name">Id Proof</p>
+                    </td>
+                    <td>
+                      <p class="document_type">XLS</p>
+                    </td>
+                    <td>
+                      <p class="document_size">20kb</p>
+                    </td>
+                    <td>
+                      <p class="added_date">19/07/2019</p>
+                    </td>
+                    <td>
+                      <span class="green_color"><i class="fa fa-trash"></i></span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="6" class="none_border">
+                      <div class="slide_img audience_target">
+                        <span class="add_side_upload">
+                          <label>
+                            <input type="file" name="">
+                            <span><img src="../../assets/img/upload_pdf.png"></span>
+                          </label>      
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <!-- // Auto response setting // -->
+    
+    <!-- // Guidance document // -->
+    <div class="row btn_section">      
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <button type="button" class="btn btn-default cancle_btn">Cancel</button>
+          <button type="button" class="btn btn-default create_btn">Confirm creation</button>
+      </div>
+    </div>
+  </div>
+</section>

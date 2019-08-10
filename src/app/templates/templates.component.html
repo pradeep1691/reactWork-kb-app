@@ -1,0 +1,124 @@
+<app-header></app-header>
+<section class="mobile-p-15 dashboard-pad">
+  <div class="container template-page">    
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="starting-title text-center">TEMPLATES</h4>
+        <p class="use_template text-center">Use your templates to create your marketing content and branded automatic response email</p>
+      </div>
+    </div>
+    <!-- // Filter // -->
+    <div class="row search-height templates_tab">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <ul id="clothing-nav" class="nav nav-tabs" role="tablist">
+  
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Automatic response email</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#hats" role="tab" id="hats-tab" data-toggle="tab" aria-controls="hats">Marketing flyer</a>
+          </li>
+
+        </ul>
+        <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12 text-right">
+          <a routerLink="/" class="btn btn-default btn_green create_template_btn">Create a new template</a>
+        </div>
+        <!-- Content Panel -->
+        <div id="clothing-nav-content" class="tab-content custom_tab">
+
+          <div role="tabpanel" class="tab-pane fade show active" id="home" aria-labelledby="home-tab">
+            <!-- <p class="text-center create_text">Create template</p> -->
+            <div class="overflow_div custom-filter-table">
+              <table class="table">
+                <thead>
+                  <tr>
+
+                    <th>
+                      <div class="checkbox checkbox-info">
+                        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox">
+                        <label for="checkbox-1-1"></label>
+                      </div>
+                    </th>
+
+                    <th colspan="2">
+                      <ul class="list-inline">
+                        <li>
+                          <select class="form-control">
+                            <option>Folders</option>
+                            <option>Folders1</option>
+                          </select>
+                        </li>
+                        <li>
+                          <span>Sort by</span>
+                        </li>
+                        <li>
+                          <select class="form-control">
+                            <option>Newest first</option>
+                            <option>Oldest first</option>
+                          </select>
+                        </li>
+                        <li class="search_template">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search saved templates">
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                    <td>
+                      <div class="checkbox checkbox-info">
+                        <input type="checkbox" id="checkbox-1-2" class="regular-checkbox">
+                        <label for="checkbox-1-2"></label>
+                      </div>
+                    </td>
+
+                    <td colspan="2">
+                      <div class="create-box-with-img">
+                        <ul class="list-inline">
+                          <li class="template_imgbox">
+                            <img src="../../assets/img/template-small.jpg" width="90">
+                          </li>
+                          <li class="template_decs">
+                            <h4>Untitled Template</h4>
+                            <p><span>Last edited</span> on May 01, 2019 10:03 pm by Yves Yota Tchoffo Drag and drop</p>
+                          </li>
+                          <li class="template_editbtn">
+                            <button class="btn btn-secondary">Edit</button>
+                            <button class="btn btn-secondary"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane fade" id="hats" aria-labelledby="hats-tab">
+            <!-- <p>A hat is a head covering. It can be worn for protection against the elements, ceremonial reasons, religious reasons, safety, or as a fashion accessory.</p> -->
+          </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+    <!-- // Filter End // -->
+  
+</section>
