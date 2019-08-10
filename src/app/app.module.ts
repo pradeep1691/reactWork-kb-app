@@ -8,6 +8,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { MykiipboxComponent } from './mykiipbox/mykiipbox.component';
 import { CreatekiipboxComponent } from './createkiipbox/createkiipbox.component';
+import { PlanComponent } from './plan/plan.component';
+import { CardrepositoryComponent } from './cardrepository/cardrepository.component';
+import { CardscreenComponent } from './cardscreen/cardscreen.component';
+import { ReferfriendComponent } from './referfriend/referfriend.component';
+import { TemplatesComponent } from './templates/templates.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { CreatekiipboxComponent } from './createkiipbox/createkiipbox.component'
     DashboardComponent,
     LoginComponent,
     MykiipboxComponent,
-    CreatekiipboxComponent
+    CreatekiipboxComponent,
+    PlanComponent,
+    CardrepositoryComponent,
+    CardscreenComponent,
+    ReferfriendComponent,
+    TemplatesComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,9 @@ body {
     color: #4f4e4e;
     background: #fdfdfe
 }
+a:hover, a:focus {
+    text-decoration: none !important
+}
 body.before_login {
     height: 100%;
     width: 100%;
@@ -51,7 +54,7 @@ input:focus, a:focus{
 	padding: 50px 0
 }
 .no-pad{
-	padding:0;
+	padding:0 !important;
 }
 .logo {
     text-align: left;
@@ -3061,7 +3064,7 @@ img.img-fluid.img-kiip {
     width: 45px;
     height: 45px;
     font-size: 50px;
-    line-height: 40px;
+    line-height: 33px;
     padding: 0;
     border-radius: 50%;
     border-color: #11ae9c;
@@ -3096,7 +3099,7 @@ form.refer_form {
     margin: 0 auto;
     width: 100%
 }
-.btn_green {
+.btn.btn_green {
     background: #11ae9c;
     color: #fff;
     border-radius: 30px;
@@ -3194,7 +3197,7 @@ span.dropdown_ico {
 .kiip_list_view .checkbox-info label > span {
     color: #4f4e4e
 }
-.div_none {
+.row.div_none {
     display: none;
 }
 .row.grid_view.div_none {
@@ -3838,10 +3841,10 @@ h4.create_kiip_title {
 .mt-10 {
     margin-top: 5px;
 }
-.create_btn:hover,
-.create_btn:focus,
-.btn_green:focus,
-.btn_green:hover {
+.btn.create_btn:hover,
+.btn.create_btn:focus,
+.btn.btn_green:focus,
+.btn.btn_green:hover {
     background: #16d6c0;
     color: #fff;
 }
@@ -4091,7 +4094,7 @@ span.add_side_upload.add_box {
     font-weight: 400;
     font-size: 18px;
 }
-.try_free_btn {
+.btn.try_free_btn {
     display: flex;
     width: auto;
     justify-content: center;
@@ -4109,8 +4112,8 @@ span.add_side_upload.add_box {
     align-items:center;
     width: 100%;
 }
-.try_free_btn:hover,
-.try_free_btn:focus {
+.btn.try_free_btn:hover,
+.btn.try_free_btn:focus {
     background: #11ae9c;
     color: #fff;
     /*border-color: #11ae9c;*/
@@ -4328,6 +4331,10 @@ span.icon {
 .inner_list > li h4 {
     font-size: 18px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.faq-box p {
+    font-size: 13px;
 }
 /*.inner_list > li.bgcolor_text {
     background: rgba(17, 174, 156, 0.45) !important;
@@ -4354,6 +4361,7 @@ span.icon {
 }
 .inner_list > li {
     font-weight: 600;
+    font-size: 13px;
 }
 li.disable_list {
     color: #ccc;
@@ -4504,7 +4512,10 @@ span.body_text {
 }
 .template-page .search-height.templates_tab .nav-tabs .nav-link.active {
     color: #11ae9c !important;
-    font-weight: 600
+    font-weight: 600;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent
 }
 .template-page .search-height.templates_tab .nav-tabs .nav-item {
     margin-right: 65px;
@@ -4516,6 +4527,12 @@ span.body_text {
     font-size: 16px;
     color: #000;
     font-weight: 400;
+}
+.template-page .search-height.templates_tab .nav-tabs .nav-link:hover,
+.template-page .search-height.templates_tab .nav-tabs .nav-link:focus {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent
 }
 p.use_template.text-center {
     margin-top: -15px;
