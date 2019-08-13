@@ -10,6 +10,10 @@ import { CardrepositoryComponent } from './cardrepository/cardrepository.compone
 import { CardscreenComponent } from './cardscreen/cardscreen.component';
 import { ReferfriendComponent } from './referfriend/referfriend.component';
 import { TemplatesComponent } from './templates/templates.component';
+import { SettingComponent } from './setting/setting.component';
+import { AccountComponent } from './account/account.component';
+import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, },
@@ -21,6 +25,10 @@ const routes: Routes = [
   { path: 'cardscreen', component: CardscreenComponent },
   { path: 'referfriend', component: ReferfriendComponent },
   { path: 'templates', component: TemplatesComponent },
+  { path: 'setting', component: SettingComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'paymentmethod', component: PaymentmethodComponent },
+  { path: 'invoice', component: InvoiceComponent },
   { path: '',   redirectTo: '/login', pathMatch: 'full' }
 ];
 

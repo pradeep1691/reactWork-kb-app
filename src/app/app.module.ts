@@ -13,6 +13,10 @@ import { CardrepositoryComponent } from './cardrepository/cardrepository.compone
 import { CardscreenComponent } from './cardscreen/cardscreen.component';
 import { ReferfriendComponent } from './referfriend/referfriend.component';
 import { TemplatesComponent } from './templates/templates.component';
+import { SettingComponent } from './setting/setting.component';
+import { AccountComponent } from './account/account.component';
+import { PaymentmethodComponent } from './paymentmethod/paymentmethod.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { TemplatesComponent } from './templates/templates.component';
     CardrepositoryComponent,
     CardscreenComponent,
     ReferfriendComponent,
-    TemplatesComponent
+    TemplatesComponent,
+    SettingComponent,
+    AccountComponent,
+    PaymentmethodComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,

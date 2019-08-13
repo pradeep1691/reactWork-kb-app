@@ -1178,7 +1178,7 @@ button.btn.btn-default.cancle_btn {
     background: transparent;
     font-size: 13px;
 }
-.create_btn {
+.btn.create_btn {
     border-radius: 30px;
     padding: 5px 40px;
     background: #11ae9c;
@@ -4005,19 +4005,34 @@ span.enable_dot {
 .nav-tabs.account_page li.nav-item .nav-link {
     font-size: 13px;
 }
+.nav-tabs.account_page li.nav-item .nav-link:hover,
+.nav-tabs.account_page li.nav-item .nav-link:focus {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.plan_change .form-control[readonly]{
+    background: transparent
+}
+.account-form select.form-control:disabled{
+    background: transparent
+}
 .template-page .search-height .nav-tabs.account_page li.nav-item .nav-link.active {
     border-bottom: 0 !important;
     color: #532e89 !important;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 .account-form .custom__select {
     width: 100%;
     max-width: none;
 }
-.change_password_btn,
-.change_password_btn:focus,
-.change_password_btn:hover {
-    background: transparent;
-    border: transparent;
+.btn.change_password_btn,
+.btn.change_password_btn:focus,
+.btn.change_password_btn:hover {
+    background: transparent !important;
+    border: transparent !important;
     color: #11ae9c;
     font-weight: 600;
     text-align: right;
@@ -4769,7 +4784,7 @@ td.none_border {
 }
 .form_sub_title {
     font-size: 13px;
-    padding-left: 0
+    padding-left: 0 !important
 }
 hr.form_hr {
     width: 125%;

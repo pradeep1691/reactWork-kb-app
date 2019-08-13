@@ -1,5 +1,5 @@
 <app-header></app-header>
-<section class="mobile-p-15 dashboard-pad">
+<section class="mobile-p-15 dashboard-pad" ng-app="showApp" ng-controller="mainController">
   <div class="container"> 
     <div class="row">
       <div class="col-12 col-sm-12 col-lg-12 col-md-12">
@@ -18,7 +18,7 @@
           </p>
           <p class="audience_target height_box">
             <span>Cover image:</span> 
-            <span class="add_side_upload add_box">
+            <span class="add_side_upload add_box" ng-click="goCats = !goCats">
               <label>
                 <!-- <input type="file" name=""> -->
                 <span><img src="../../assets/img/white-upload.png"></span>
@@ -60,7 +60,7 @@
           </form>
 
           <p class="fns_italic col-12">
-            <a href="upgrade_step_1.html" class="color_text">Upgrade</a> to unlock premium features
+            <a href="#" class="color_text">Upgrade</a> to unlock premium features
           </p>
 
           <div class="col-12 col-sm-12 col-md-12 col-lg-12 no-pad">
@@ -124,7 +124,7 @@
             </div>
 
             <p class="fns_italic col-12 no-pad">
-              <a href="upgrade_step_1.html" class="color_text">Upgrade</a> to unlock premium features.
+              <a href="#" class="color_text">Upgrade</a> to unlock premium features.
             </p>
           </div>
 
@@ -228,3 +228,35 @@
     </div>
   </div>
 </section>
+
+<div class="add_img_box sideDiv" ng-show="goCats">
+  <div class="side-box">
+    <h4>Set your cover image</h4>
+    <button type="button" class="close" data-dismiss="sideDiv" aria-label="Close">
+      <span aria-hidden="true">✕</span>
+    </button>
+    <ul class="list-inline">
+      <li>
+        <img src="../../assets/img/free-photo.jpg">
+        <p class="text-center">Free Photos</p>
+      </li>
+      <li>
+        <img src="../../assets/img/color-photo.jpg">
+        <p class="text-center">Colors</p>
+      </li>
+      <li class="add_side_upload">
+        <label>
+          <input type="file" name="">
+          <span><img src="../../assets/img/upload-icon-img.jpg"></span>
+        </label>      
+        <p>Upload image</p>
+      </li>
+    </ul>
+    <p>This image will also be used to design your guidance document used to advertize your Kiip Box contact email address. </p>
+
+    <p>You can design and print your guidance document to display it in your store so that visitors see it and can signup.</p>
+  </div>
+</div>
+<script>
+
+</script>

@@ -1,0 +1,60 @@
+<app-header></app-header>
+<section class="mobile-p-15 dashboard-pad payment_page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h4 class="text-center">PAYMENT METHODS</h4>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-12">
+        <div class="kiip-box text-center method_page">
+          <div class="kiip-box-body">
+            <p>Balance due</p>
+          </div>
+          <div class="kiip-box-foot">            
+            <p class="due_balance">Your balance due is <span>0,00 €</span></p>
+            <button class="btn btn-default due_balance_btn" type="button">Pay now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-12">
+        <div class="kiip-box text-center method_page">
+          <div class="kiip-box-body">
+            <p><span>Billing methods</span><button class="btn btn-default add_new" type="button">Add new</button></p>
+          </div>
+          <div class="kiip-box-payment paypal">            
+            <h4>Primary</h4>
+            <p><img src="../../assets/img/paypal.jpg"><span>PayPal ( me@paypal.com)</span> </p>
+            <div class="dropdown mastercard_modify">
+                <button class="btn btn-secondary dropdown-toggle select-all" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../../assets/img/more-icon.png">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Edit</a>
+                  <a class="dropdown-item trigger-btn" data-toggle="modal" href="#myModal">Delete</a>
+                </div>
+              </div>
+          </div>
+          <div class="kiip-box-payment other_card">            
+            <h4>Secondary</h4>
+            <p><img src="../../assets/img/mastercard.png"><span>****3781, Expire 10/2022</span> </p>
+              <div class="dropdown mastercard_modify">
+                <a class="btn btn-secondary select-all"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="../../assets/img/more-icon.png">
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" routerLink="/login">Set as primary</a>
+                  <a class="dropdown-item" routerLink="/login">Edit</a>
+                  <a class="dropdown-item trigger-btn" data-toggle="modal" RouterLink="#myModal">Delete</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
